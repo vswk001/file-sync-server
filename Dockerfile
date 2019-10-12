@@ -1,4 +1,3 @@
-#FROM instrumentisto/rsync-ssh
 FROM alpine:3.10.2
 
 MAINTAINER VSWK <vswk001@gmail.com>
