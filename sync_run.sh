@@ -35,7 +35,7 @@ inotifywait -e ${INOTIFY_EVENTS} ${INOTIFY_OPTONS} --timefmt '%d/%m/%y %H:%M' --
     do
         for host in ${HOSTS}
         do
-            rsync -arzuq --delete ${SYNC_DIR} ${host}::sync_part
+            rsync -azP --delete ${SYNC_DIR} ${host}::sync_part
             echo "${notifies} was rsynced" >> /tmp/rsync.log 2>&1
         done
     done
