@@ -8,6 +8,7 @@ RUN apk update \
             rsync \
             openssh-client \
             inotify-tools \
+            bash \
  && rm -rf /var/cache/apk/*
 
 ADD my_rsyncd.conf /etc/my_rsyncd.conf
